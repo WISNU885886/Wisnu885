@@ -274,7 +274,7 @@
             color: var(--first-color);
         }
         
-        /*===== HOME =====*/
+      /*===== HOME =====*/
         .home {
             background: var(--gradient-soft);
             padding: 8rem 0 4rem;
@@ -369,6 +369,30 @@
         .home__img {
             justify-self: center;
             animation: slideInRight 1s ease-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .home__profile-img {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 8px solid rgba(102, 126, 234, 0.2);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .home__blob {
+            width: 320px;
+            fill: var(--first-color);
+            filter: drop-shadow(0 12px 24px rgba(102, 126, 234, 0.2));
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .home__blob-img {
+            width: 170px;
         }
         
         .home__blob {
